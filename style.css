@@ -1,5 +1,6 @@
 body {
     font-size: 1vw;
+    background-color: rgb(240, 240, 240) ;
     /* height: 100vh; */
 }
 
@@ -7,6 +8,8 @@ body {
     background-color: rgb(59, 59, 59);
     color: rgb(240, 240, 240);
 }
+
+
 
 .nav-link {
     color: rgb(224, 224, 223);
@@ -16,14 +19,18 @@ h1 {
     font-size: 2.5vw
 }
 
-.main {
-    background-color: rgb(250, 249, 249);
-    /* width: 100vh;
-    overflow-y: scroll; */
-}
 
 h2 {
-    font-size: 3.5vw
+    font-size: 3.5vw;
+}
+#snimki, #zaRabota, #zapitvane {
+    color: rgb(84, 84, 84);
+    background-color: rgb(240, 240, 240);
+}
+
+#zaMen, #contacts {
+    color: rgb(240, 240, 240);
+    background-color: rgb(84, 84, 84);
 }
 
 img {
@@ -37,28 +44,13 @@ img {
     filter: grayscale(0%);
 }
 
-#zaMen {
-    background-color: rgb(84, 84, 84);
-    color: rgb(240, 240, 240);
-}
-
-#zaRabota {
-    background-color: #c8c8cc;
-    color: rgb(84, 84, 84);
-}
-
-#contact {
-    background-color: rgb(84, 84, 84);
-    color: rgb(240, 240, 240);
-}
-
-#zapitvane {
-    background-color: #c8c8cc;
-    color: rgb(84, 84, 84);
-}
 
 .nav-link:focus, 
 .nav-link:hover {
-    background-color: red;
-    color:aqua
+    background-color: rgb(28, 27, 27);
+    color:rgb(255, 255, 255)
+}
+footer {
+    background-color: rgb(84, 84, 84);
+    color: rgb(240, 240, 240);
 }
