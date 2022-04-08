@@ -9,6 +9,7 @@ h1 {
     font-size: 2vw;
 }
 
+
 .navigation {
     background-color: rgb(59, 59, 59);
     color: rgb(240, 240, 240);
@@ -97,3 +98,9 @@ footer {
  #ime, #familiq, #nomer, #email {
      min-width:fit-content
  }
+
+ @media only screen and (max-width: 1200px) {
+    #snimki img {
+        filter: grayscale(0%);
+    }
+  }
