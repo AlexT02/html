@@ -1,7 +1,6 @@
 body {
     font-size: 1vw;
     background-color: rgb(240, 240, 240);
-    /* height: 100vh; */
     font-family: 'Manrope', sans-serif;
 }
 
@@ -62,7 +61,11 @@ img {
 footer {
     background-color: rgb(28, 27, 27);
     color: rgb(240, 240, 240);
-    font-size: 0.8vw;
+    font-size: 1.2vw; 
+}
+
+footer i {
+    font-style: normal !important;
 }
 
 
@@ -115,5 +118,8 @@ footer {
 @media only screen and (max-width: 1200px) {
     #snimki img {
         filter: grayscale(0%);
+    }
+    footer .fa-brands {
+        font-size: 7vw;
     }
 }

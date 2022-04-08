@@ -44,7 +44,7 @@
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header justify-content-end ps-0 pb-0 pe-3 pt-3">
                     <button type="button" class="btn-close btn-close-white text-reset fs-5 " data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                        aria-label="Close" id="close-nav"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-2">
@@ -386,7 +386,7 @@
                             обектив е сниман. Една снимка е добра, когато като я погледнеш усещаш отново всички
                             емоции. </p>
                     </div>
-                    <div class="col-xl-5 col-10 my-auto">
+                    <div class="col-xl-5 col-10 m-auto">
                         <img src="./New folder/New folder/photographer.png" class="w-100 my-5">
                     </div>
                 </section>
@@ -440,7 +440,7 @@
                         <input type="text" name="phoneNumber" id="nomer" required="required" class="w-25"><br>
                         <label for="email">Имейл:</label><br>
                         <input type="email" name="email" id="email" required="required" class="w-25"><br>
-                        <input type="submit" id="submit" value="Изпрати" class="my-5 btn btn-dark fa-1x">
+                        <input type="submit" id="submit" value="Изпрати" class="my-5 btn btn-dark fa-1x fs-5">
                     </form>
                     <div id="thanks" style="display: none;">
                         <p class="fs-3 py-2">Запитването бе изпратено! Лек и усмихнат ден!</p>
@@ -449,28 +449,27 @@
                     </div>
                 </section>
                 <footer class="row py-2 ">
-                    <div class="col-3 my-auto text-center  d-grid gap-3">
+                    <div class="col-xl-3 d-xl-block d-none my-auto text-center  d-grid gap-3">
                         <a href="tel:089-569-3127" class="link-light text-decoration-none"><i
-                                class="bi bi-telephone-fill">
-                                +359 895 693 127</i></a>
+                                class="bi bi-telephone-fill"> +359 895 693 127</i></a><br>
                         <a href="tel:=359-886-525-548" class="link-light text-decoration-none"><i
                                 class="bi bi-telephone-fill"> +359 886 525 548</i></a>
                     </div>
-                    <div class="col-4 my-auto text-center  d-grid gap-3">
+                    <div class="col-xl-4 d-xl-block d-none my-auto text-center  d-grid gap-3">
                         <a href="mailto:hege@example.com" class="link-light text-decoration-none"><i
-                                class="bi bi-envelope-fill"> anna_photography@gmail.com</i></a>
+                                class="bi bi-envelope-fill"> anna_photography@gmail.com</i></a><br>
                         <a href="mailto:hege@example.com" class="link-light text-decoration-none"><i
                                 class="bi bi-envelope-check-fill"> anna_license@gmail.com</i></a>
                     </div>
-                    <div class="col-2 my-auto text-center ">
+                    <div class="col-xl-3 col-6 my-auto text-center ">
                         <a href="https://www.facebook.com/" class="text-decoration-none link-light"><i
-                                class="fa-brands fa-facebook-square fa-3x "></i></a>
+                                class="fa-brands fa-facebook-square fa-2x "></i></a>
                         <a href="https://www.instagram.com/" class="text-decoration-none link-light"><i
-                                class="fa-brands fa-instagram-square fa-3x mx-2"></i></a>
+                                class="fa-brands fa-instagram-square fa-2x mx-2"></i></a>
                         <a href="https://twitter.com/" class="text-decoration-none link-light"><i
-                                class="fa-brands fa-twitter-square fa-3x"></i></a>
+                                class="fa-brands fa-twitter-square fa-2x"></i></a>
                     </div>
-                    <div class="col-3 my-auto text-center">
+                    <div class="col-xl-2 col-6 my-auto text-center">
                         <img src="./New folder/Untitled-1.svg" style="width: 50%">
                     </div>
                 </footer>
@@ -495,14 +494,15 @@
             document.querySelector('#nomer').value = '';
             document.querySelector('#email').value = '';
         });
-    </script>
-    <!-- <script>
-        function myFunction() {
-          var txt;
-          if (confirm("Благодаря за интереса! Лек и усмихнат ден!")) {
-            txt = "Вие изпратихте запитване.";
-          
-          document.getElementById("demo").innerHTML = txt;
+
+        var nextStep = document.querySelector('#close-nav');
+        var links = document.getElementsByClassName('nav-link');
+        
+        for (let link of links) {
+            link.addEventListener('click', () => {
+                nextStep.click();
+            });
         }
-        </script> -->
+
+    </script>
 </body>
