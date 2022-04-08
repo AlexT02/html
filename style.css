@@ -5,6 +5,10 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
+h1 {
+    font-size: 2vw;
+}
+
 .navigation {
     background-color: rgb(59, 59, 59);
     color: rgb(240, 240, 240);
@@ -18,14 +22,6 @@ body {
     color: rgb(240, 240, 240);
 }
 
-h1 {
-    font-size: 2.4vw
-}
-
-
-h2 {
-    font-size: 3.5vw;
-}
 #snimki, #zaRabota, #zapitvane {
     color: rgb(28, 27, 27);
     background-color: rgb(240, 240, 240);
@@ -37,7 +33,8 @@ h2 {
 }
 
 img {
-    width: 100%
+    width: 100%;
+    height: auto !important
 }
 
 #snimki img {
@@ -47,6 +44,9 @@ img {
     filter: grayscale(0%);
 }
 
+.nav-link {
+    color: rgb(255, 255, 255) !important;
+}
 
 .nav-link:focus, 
 .nav-link:hover {
@@ -56,11 +56,10 @@ img {
 footer {
     background-color: rgb(28, 27, 27);
     color: rgb(240, 240, 240);
-}
-
-footer {
     font-size: 0.8vw;
 }
+
+    
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: rgb(240, 240, 240);
     background-color: rgb(28, 27, 27);
@@ -71,17 +70,30 @@ footer {
 }
 
 .modal-body img {
-    max-height: 100vh;
+    max-height: 90vh;
     max-width: 100vw;
     width: auto;
-    height: 100%;
 }
 .modal-content {
-    background: rgba(0, 0, 0, 0.1)
+    background: rgba(0, 0, 0, 0.1);
+    
 }
+
+.modal-content img {
+    filter: grayscale(0%) !important;
+}
+
 .modal-header {
     border: none;
 }
-.offcanvas-body, .offcanvas-header {
-    background-color: rgb(59, 59, 59);
+
+.offcanvas-body , .offcanvas-header {
+    background-color: rgb(59, 59, 59) ;
+    
 }
+#logo {
+     height: 40px !important
+}
+ #ime, #familiq, #nomer, #email {
+     min-width:fit-content
+ }
