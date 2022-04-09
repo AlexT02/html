@@ -126,9 +126,16 @@ footer i {
     #info p,
     #zaRabota p,
     #contacts p,
-    form label
-    {
+    form label {
         font-size: 1rem !important;
+    }
+
+    #thanks p {
+        font-size: 1rem !important;
+    }
+
+    .blockquote {
+        padding: 1rem !important
     }
 }
 
@@ -136,6 +143,7 @@ footer i {
     font-size: medium;
     opacity: 100;
 }
+
 .offcanvas-body .fa-brands {
     font-size: 3rem
 }
