@@ -61,7 +61,7 @@ img {
 footer {
     background-color: rgb(28, 27, 27);
     color: rgb(240, 240, 240);
-    font-size: 1.2vw; 
+    font-size: 1.2vw;
 }
 
 footer i {
@@ -119,7 +119,21 @@ footer i {
     #snimki img {
         filter: grayscale(0%);
     }
+
     footer .fa-brands {
         font-size: 7vw;
     }
+
+    #info p,
+    #zaRabota p,
+    #contacts p,
+    form label
+    {
+        font-size: 1rem !important;
+    }
+}
+
+.btn-close {
+    font-size: medium;
+    opacity: 100;
 }
