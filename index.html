@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="bg">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,10 +18,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <nav class="navbar navbar-dark bg-dark sticky-top d-xl-none">
         <div class="container-fluid">
@@ -34,15 +31,15 @@
                     </button>
                 </div>
                 <div class="col-8 text-center">
-                    <h1 class="navbar-brand m-auto fs-2 ">Anna Photography</h1>
+                    <h1 class="navbar-brand m-auto fs-3">Anna Photography</h1>
                 </div>
-                <div class="col-2 text-center">
-                    <img id="logo" src="./photographs/Untitled-1.svg">
+                <div class="col-2">
+                    <img id="logo" src="./photographs/Untitled-1.svg" alt="Лого на сайт на фотограф">
                 </div>
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header justify-content-end ps-0 pb-0 pe-3 pt-3">
+                <div class="offcanvas-header justify-content-end ps-0 pb-0 pe-3 pt-3" id="offcanvasNavbarLabel">
                     <button type="button" class="btn-close btn-close-white text-reset fs-5" data-bs-dismiss="offcanvas"
                         aria-label="Close" id="close-nav"></button>
                 </div>
@@ -55,13 +52,13 @@
                             <a class="nav-link" href="#zaMen">За мен</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#work">За работа с мен</a>
+                            <a class="nav-link" href="#zaRabota">За работа с мен</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contacts">Контакти</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#form">Запитване</a>
+                            <a class="nav-link" href="#zapitvane">Запитване</a>
                         </li>
                     </ul>
                     <div class="py-3 d-grid gap-2">
@@ -80,7 +77,6 @@
         <div class="row">
             <div class="navigation col-md-2 col-12 nav-pills d-none d-xl-block vh-100">
                 <div>
-                    <!-- class="position-relative mt-3 ms-2 h-vh-100" -->
                     <div class="mx-2 mt-2">
                         <h1 class="fw-bold">Anna<br>Photography</h1>
                         <p>Професионален<br>фотограф и редактор</p>
@@ -92,9 +88,9 @@
                             <a class="nav-link" href="#zaMen">За мен</a>
                             <a class="nav-link" href="#zaRabota">За работа с мен</a>
                             <a class="nav-link" href="#contacts">Контакти</a>
-                            <a class="nav-link" href="#form">Запитване</a>
+                            <a class="nav-link" href="#zapitvane">Запитване</a>
                             <div class="w-75 mt-5 py-3">
-                                <img src="./photographs/Untitled-1.svg">
+                                <img src="./photographs/Untitled-1.svg" alt="Лого на сайт на фотограф">
                             </div>
                             <div class="my-3">
                                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="text-decoration-none link-light"><i
@@ -111,44 +107,43 @@
             <div class="main col-xl-10 col-12 vh-100 position-relative" style="overflow-y: scroll;" data-bs-spy="scroll"
                 data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
                 <div class="container">
-                    <!------------------------------------------------------------------SECTION PORTFOLIO START-------------------------------------------------------------->
                     <section id="snimki" class="mb-5">
                         <h2 id="portfolio" class="text-center py-5 text-uppercase fw-bolder fs-1">Портфолио</h2>
                         <div class="row mb-3 g-0">
                             <div class="col-xl-4 col-12 pe-xl-2 pb-xl-0 pb-2">
                                 <div class="row h-100 align-content-between g-0">
                                     <div style="height: fit-content;">
-                                        <img src="./photographs/faceSmile.jpg" class="pb-2" data-bs-target="#faceSmile"
+                                        <img src="./photographs/faceSmile.jpg" alt="Снимка на усмихнато момиче с къдрава коса" class="pb-2" data-bs-target="#faceSmile"
                                             data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="faceSmile" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        aria-labelledby="smile-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="btn-close btn-close-white "
+                                                <div class="modal-header" id="smile-close">
+                                                    <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/faceSmile.jpg">
+                                                    <img src="./photographs/faceSmile.jpg" alt="Снимка на усмихнато момиче с къдрава коса">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div style="height: fit-content;">
-                                        <img src="./photographs/GirlFace.jpg" class="pt-2" data-bs-target="#girlFace"
+                                        <img src="./photographs/GirlFace.jpg" alt="Снимка на лице на момиче с червено червило" class="pt-2" data-bs-target="#girlFace"
                                             data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="girlFace" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="face-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="face-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/GirlFace.jpg">
+                                                    <img src="./photographs/GirlFace.jpg" alt="Снимка на лице на момиче с червено червило">
                                                 </div>
                                             </div>
                                         </div>
@@ -158,55 +153,55 @@
                             <div class="col-xl-8 col-12 ps-xl-2 pt-xl-0 pt-2">
                                 <div class="row h-100 align-content-between g-0">
                                     <div class="col-md-6 col-12">
-                                        <img src="./photographs/sitGirl.jpg" class="pe-md-2 pe-0 pb-2"
+                                        <img src="./photographs/sitGirl.jpg" alt="Снимка на седнало момиче с рокля" class="pe-md-2 pe-0 pb-2"
                                             data-bs-target="#sitGirl" data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="sitGirl" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="sit-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="sit-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/sitGirl.jpg">
+                                                    <img src="./photographs/sitGirl.jpg" alt="Снимка на седнало момиче с рокля">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">
-                                        <img src="./photographs/girlPose.jpg" class="ps-md-2 ps-0 pb-2 pt-md-0 pt-2"
+                                        <img src="./photographs/girlPose.jpg" alt="Снимка на момиче с небрежна рокля" class="ps-md-2 ps-0 pb-2 pt-md-0 pt-2"
                                             data-bs-target="#girlPose" data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="girlPose" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="pose-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="pose-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/girlPose.jpg">
+                                                    <img src="./photographs/girlPose.jpg" alt="Снимка на момиче с небрежна рокля">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <img src="./photographs/dogGirl.jpg" class="pt-2" data-bs-target="#dogGirl"
+                                        <img src="./photographs/dogGirl.jpg" alt="Снимка на момиче с куче далматинец" class="pt-2" data-bs-target="#dogGirl"
                                             data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="dogGirl" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="dog-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="dog-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/dogGirl.jpg">
+                                                    <img src="./photographs/dogGirl.jpg" alt="Снимка на момиче с куче далматинец">
                                                 </div>
                                             </div>
                                         </div>
@@ -218,37 +213,37 @@
                             <div class="col-xl-6 col-12 pe-xl-2 pb-xl-0 pb-2">
                                 <div class="row h-100 align-content-between g-0">
                                     <div style="height: fit-content;">
-                                        <img src="./photographs/girlsDress.jpg" class="pb-2"
+                                        <img src="./photographs/girlsDress.jpg" alt="Две момичета с официални рокли" class="pb-2"
                                             data-bs-target="#girlsDress" data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="girlsDress" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="dress-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="dress-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/girlsDress.jpg">
+                                                    <img src="./photographs/girlsDress.jpg" alt="Две момичета с официални рокли">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div style="height: fit-content;">
-                                        <img src="./photographs/field.jpg" class="pt-2" data-bs-target="#field"
+                                        <img src="./photographs/field.jpg" alt="Снимка на момиче на поляна" class="pt-2" data-bs-target="#field"
                                             data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="field" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="field-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="field-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/field.jpg">
+                                                    <img src="./photographs/field.jpg" alt="Снимка на момиче на поляна">
                                                 </div>
                                             </div>
                                         </div>
@@ -258,38 +253,38 @@
                             <div class="col-xl-6 col-12 ps-xl-2 pt-xl-0 pt-2">
                                 <div class="row h-100 align-content-between g-0">
                                     <div style="height: fit-content;">
-                                        <img src="./photographs/faceFreckles.jpg" class="pb-2"
+                                        <img src="./photographs/faceFreckles.jpg" alt="Снимка на момиче с лунички и обеци" class="pb-2"
                                             data-bs-target="#faceFreckles" data-bs-toggle="modal"
                                             data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="faceFreckles" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="freckles-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="freckles-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/faceFreckles.jpg">
+                                                    <img src="./photographs/faceFreckles.jpg" alt="Снимка на момиче с лунички и обеци">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div style="height: fit-content;">
-                                        <img src="./photographs/wedding.jpg" class="pt-2" data-bs-target="#wedding"
+                                        <img src="./photographs/wedding.jpg" alt="Снимка на двойка на сватбеният им ден" class="pt-2" data-bs-target="#wedding"
                                             data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="wedding" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="wedding-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="wedding-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/wedding.jpg">
+                                                    <img src="./photographs/wedding.jpg" alt="Снимка на двойка на сватбеният им ден">
                                                 </div>
                                             </div>
                                         </div>
@@ -302,38 +297,38 @@
 
                                 <div class="row h-100 align-content-between g-0">
                                     <div style="height: fit-content;">
-                                        <img src="./photographs/faceProduct.jpg" class="pb-2"
+                                        <img src="./photographs/faceProduct.jpg" alt="Продуктова фотография на козметичен продукт за лице" class="pb-2"
                                             data-bs-target="#faceProduct" data-bs-toggle="modal"
                                             data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="faceProduct" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="product-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="product-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/faceProduct.jpg">
+                                                    <img src="./photographs/faceProduct.jpg" alt="Продуктова фотография на козметичен продукт за лице">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div style="height: fit-content;">
-                                        <img src="./photographs/whiskey.jpg" class="pt-2" data-bs-target="#whiskey"
+                                        <img src="./photographs/whiskey.jpg" alt="Продуктова фотография на две уискита Джак Даниелс" class="pt-2" data-bs-target="#whiskey"
                                             data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="whiskey" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="whiskey-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="whiskey-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/whiskey.jpg">
+                                                    <img src="./photographs/whiskey.jpg" alt="Продуктова фотография на две уискита Джак Даниелс">
                                                 </div>
                                             </div>
                                         </div>
@@ -344,37 +339,37 @@
                             <div class="col-xl-5 col-12  ps-xl-2 pt-xl-0 pt-2 ">
                                 <div class="row h-100 align-content-between g-0">
                                     <div style="height: fit-content;">
-                                        <img src="./photographs/burger.jpg" class="pb-2" data-bs-target="#burger"
+                                        <img src="./photographs/burger.jpg" alt="Продуктова фотография на храна-бургер" class="pb-2" data-bs-target="#burger"
                                             data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="burger" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="burger-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="burger-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/burger.jpg">
+                                                    <img src="./photographs/burger.jpg" alt="Продуктова фотография на храна-бургер">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div style="height: fit-content;">
-                                        <img src="./photographs/basketball.jpg" class="pt-2"
+                                        <img src="./photographs/basketball.jpg" alt="Снимка на баскетболист в действие" class="pt-2"
                                             data-bs-target="#basketball" data-bs-toggle="modal" data-bs-dismiss="modal">
                                     </div>
                                     <div class="modal fade" id="basketball" aria-hidden="true"
-                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        aria-labelledby="basketball-close" tabindex="-1">
                                         <div class="modal-dialog modal-fullscreen">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header" id="basketball-close">
                                                     <button type="button" class="btn-close btn-close-white"
                                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="./photographs/basketball.jpg">
+                                                    <img src="./photographs/basketball.jpg" alt="Снимка на баскетболист в действие">
                                                 </div>
                                             </div>
                                         </div>
@@ -383,10 +378,9 @@
                             </div>
                         </div>
                     </section>
-                    <!------------------------------------------------------------------SECTION PORTFOLIO END------------------------------------------------------------------>
                 </div>
                 <section class="row" id="zaMen">
-                    <div id="info" class="col-xl-7 col-12 my-auto ">
+                    <div id="info" class="col-xl-7 col-12 my-auto">
                         <h2 class="mb-5 fs-1 fw-bold ps-3 pt-5">За мен</h2>
                         <p class="fs-4 ps-4">Занимавам се с фотография от 9 години (професионално от 7). През
                             годините не просто научих
@@ -395,7 +389,7 @@
                             емоции. </p>
                     </div>
                     <div class="col-xl-5 col-12 m-auto">
-                        <img src="./photographs/MePhotographer/photographer.png" class="w-100 my-5">
+                        <img src="./photographs/MePhotographer/photographer.png" alt="Снимка на фотограф жена" class="w-100 my-5">
                     </div>
                 </section>
                 <section class="row" id="zaRabota">
@@ -425,7 +419,7 @@
                     </div>
                     <div class="col-12">
                         <div class="row">
-                            <div id="info" class="col-lg-6 col-10 pb-5 mx-auto ">
+                            <div id="map" class="col-lg-6 col-10 pb-5 mx-auto">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d298.1590111853445!2d27.459941474225957!3d42.51582539933125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a6937dd4146f23%3A0x4e3345bbaabe4716!2z0LYu0LouINCh0LvQsNCy0LXQudC60L7QsiwgODAwNSDQti7Qui4g0J_QtdGC0LrQviDQoC4g0KHQu9Cw0LLQtdC50LrQvtCyLCDQkdGD0YDQs9Cw0YE!5e0!3m2!1sbg!2sbg!4v1648746312398!5m2!1sbg!2sbg"
                                     style="height: 50vh ; width: 100%">
@@ -445,19 +439,19 @@
                 </section>
                 <section id="zapitvane">
                     <h2 id="form" class="my-5 ps-3 fs-1 fw-bold">Запитване</h2>
-                    <form action="" method="get" class="fs-4 ps-4" id="forma">
-                        <label for="zapitvane" class="pb-3">Задайте въпросите си тук и очаквайте отговор до 2 дни! Моля
+                    <form action="example.htm" method="get" class="fs-4 ps-4" id="forma">
+                        <label for="question" class="pb-3">Задайте въпросите си тук и очаквайте отговор до 2 дни! Моля
                             уточнете
                             предпочитания от Вас начин за обратна връзка.</label><br>
-                        <textarea name="question" rows="5" class="w-75 fs-5"></textarea><br>
+                        <textarea name="question" rows="5" id="question" class="w-75 fs-5"></textarea><br>
                         <label for="ime">Име:</label><br>
-                        <input type="text" name="name" id="ime" required="required" class="w-25"><br>
+                        <input type="text" name="name" id="ime" required="required"><br>
                         <label for="lastName">Фамилия:</label><br>
-                        <input type="text" name="lastName" id="familiq" required="required" class="w-25"><br>
+                        <input type="text" name="lastName" id="lastName" required="required"><br>
                         <label for="number">Тел. номер:</label><br>
-                        <input type="text" name="phoneNumber" id="nomer" required="required" class="w-25"><br>
+                        <input type="text" name="phoneNumber" id="number" required="required"><br>
                         <label for="email">Имейл:</label><br>
-                        <input type="email" name="email" id="email" required="required" class="w-25"><br>
+                        <input type="email" name="email" id="email" required="required"><br>
                         <input type="submit" id="submit" value="Изпрати" class="my-5 btn btn-dark fa-1x fs-5">
                     </form>
                     <div id="thanks" style="display: none;">
@@ -488,7 +482,7 @@
                                 class="fa-brands fa-twitter-square fa-2x"></i></a>
                     </div>
                     <div class="col-xl-2 col-6 my-auto text-center">
-                        <img src="./photographs/Untitled-1.svg" style="width: 50%">
+                        <img src="./photographs/Untitled-1.svg" alt="Лого на сайт на фотограф" style="width: 50%">
                     </div>
                 </footer>
             </div>
@@ -501,7 +495,6 @@
             document.getElementById('forma').style.display = 'none';
             document.getElementById('thanks').style.display = 'block';
         });
-
         var backStep = document.querySelector('#backToForm');
         backStep.addEventListener('click', function (e) {
             e.preventDefault();
@@ -512,15 +505,12 @@
             document.querySelector('#nomer').value = '';
             document.querySelector('#email').value = '';
         });
-
         var nextStep = document.querySelector('#close-nav');
         var links = document.getElementsByClassName('nav-link');
-
         for (let link of links) {
             link.addEventListener('click', () => {
                 nextStep.click();
             });
         }
-
     </script>
 </body>
