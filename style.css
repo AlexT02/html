@@ -16,9 +16,6 @@ h1 {
     font-size: 1.5rem;
 }
 .nav-link {
-    color: rgb(240, 240, 240);
-}
-.nav-link {
     color: rgb(255, 255, 255) !important;
 }
 .nav-link:focus,
