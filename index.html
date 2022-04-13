@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="main col-xl-10 col-12 vh-100 position-relative" style="overflow-y: scroll;" data-bs-spy="scroll"
-                data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+                data-bs-target="#navbar" data-bs-method="auto" tabindex="0">
                 <div class="container">
                     <section id="snimki" class="mb-5">
                         <h2 id="portfolio" class="text-center py-5 fw-bolder fs-1">Портфолио</h2>
@@ -418,8 +418,6 @@
                 <section class="row" id="contacts">
                     <div class="col-12">
                         <h2 id="contact" class="py-5 fs-1 fw-bold ps-3 mb-0">Контакти</h2>
-                    </div>
-                    <div class="col-12">
                         <div class="row">
                             <div id="map" class="col-lg-6 col-10 pb-5 mx-auto">
                                 <iframe
@@ -439,27 +437,29 @@
                         </div>
                     </div>
                 </section>
-                <section id="zapitvane">
-                    <h2 id="form" class="my-5 ps-3 fs-1 fw-bold">Запитване</h2>
-                    <form action="example.htm" method="get" class="fs-4 ps-4" id="forma">
-                        <label for="question" class="pb-3">Задайте въпросите си тук и очаквайте отговор до 2 дни! Моля
-                            уточнете
-                            предпочитания от Вас начин за обратна връзка.</label><br>
-                        <textarea name="question" rows="5" id="question" class="w-75 fs-5"></textarea><br>
-                        <label for="ime">Име:</label><br>
-                        <input type="text" name="name" id="ime" required="required"><br>
-                        <label for="lastName">Фамилия:</label><br>
-                        <input type="text" name="lastName" id="lastName" required="required"><br>
-                        <label for="number">Тел. номер:</label><br>
-                        <input type="text" name="phoneNumber" id="number" required="required"><br>
-                        <label for="email">Имейл:</label><br>
-                        <input type="email" name="email" id="email" required="required"><br>
-                        <input type="submit" id="submit" value="Изпрати" class="my-5 btn btn-dark fa-1x fs-5">
-                    </form>
-                    <div id="thanks" style="display: none;">
-                        <p class="fs-4 py-2">Запитването бе изпратено! Лек и усмихнат ден!</p>
-                        <button type="submit" class="dbtn btn-dark mb-3 fa-1x fs-4" id="backToForm">Обратно към форма за
-                            запитване</button>
+                <section class="row" id="zapitvane">
+                    <div class="col-12">
+                        <h2 id="form" class="my-5 ps-3 fs-1 fw-bold">Запитване</h2>
+                        <form action="example.htm" method="get" class="fs-4 ps-4" id="forma">
+                            <label for="question" class="pb-3">Задайте въпросите си тук и очаквайте отговор до 2 дни! Моля
+                                уточнете
+                                предпочитания от Вас начин за обратна връзка.</label><br>
+                            <textarea name="question" rows="5" id="question" class="w-75 fs-5"></textarea><br>
+                            <label for="ime">Име:</label><br>
+                            <input type="text" name="name" id="ime" required="required"><br>
+                            <label for="lastName">Фамилия:</label><br>
+                            <input type="text" name="lastName" id="lastName" required="required"><br>
+                            <label for="number">Тел. номер:</label><br>
+                            <input type="text" name="phoneNumber" id="number" required="required"><br>
+                            <label for="email">Имейл:</label><br>
+                            <input type="email" name="email" id="email" required="required"><br>
+                            <input type="submit" id="submit" value="Изпрати" class="my-5 btn btn-dark fa-1x fs-5">
+                        </form>
+                        <div id="thanks" style="display: none;">
+                            <p class="fs-4 py-2">Запитването бе изпратено! Лек и усмихнат ден!</p>
+                            <button type="submit" class="dbtn btn-dark mb-3 fa-1x fs-4" id="backToForm">Обратно към форма за
+                                запитване</button>
+                        </div>
                     </div>
                 </section>
                 <footer class="row py-2">
