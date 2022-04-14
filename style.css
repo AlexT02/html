@@ -93,7 +93,7 @@ footer {
     color: rgb(240, 240, 240);
     font-size: 1vw;
 }
-footer i {
+i {
     font-style: normal !important;
 }
 #ime,
